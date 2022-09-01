@@ -26,15 +26,15 @@
 const inputEl = document.querySelector('#validation-input');
 
 inputEl.addEventListener('blur', event => {
-    const inputValueEl = event.target.value.length;
-    if (inputValueEl === Number(inputEl.dataset.length)) {
-        inputEl.classList.add('valid');
-        inputEl.classList.remove('invalid');
-    } else {
-        inputEl.classList.add('invalid');
-        inputEl.classList.remove('valid');
-    }
+  const inputValueEl = event.target.value.length;
+  if (inputValueEl === Number(inputEl.dataset.length)) {
+    inputEl.classList.add('valid');
+    inputEl.classList.remove('invalid');
+  } else {
+    inputEl.classList.add('invalid');
+    inputEl.classList.remove('valid');
+  }
 
-    console.log(Number(inputEl.dataset.length));
-    console.log(inputValueEl);
-})
+  console.log(Number(inputEl.dataset.length));
+  console.log(inputValueEl);
+});

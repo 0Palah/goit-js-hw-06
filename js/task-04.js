@@ -10,18 +10,16 @@
 // Додай слухачів кліків до кнопок, всередині яких збільшуй або зменшуй значення лічильника.
 // Оновлюй інтерфейс новим значенням змінної counterValue.
 
-
 const counterValueEl = document.querySelector('#value');
 const decrementBtnEl = document.querySelector('[data-action="decrement"]');
 const incrementBtnEl = document.querySelector('[data-action="increment"]');
 let counterValue = 0;
 decrementBtnEl.addEventListener('click', () => {
-    counterValueEl.textContent = counterValue -= 1;
+  counterValueEl.textContent = counterValue -= 1;
 });
 incrementBtnEl.addEventListener('click', () => {
-    counterValueEl.textContent = counterValue += 1;
+  counterValueEl.textContent = counterValue += 1;
 });
-
 
 // console.log(counterValueEl);
 // console.log(decrementBtnEl);

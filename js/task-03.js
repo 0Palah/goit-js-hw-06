@@ -7,8 +7,6 @@
 // Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
 // Додай мінімальне оформлення галереї флексбоксами або грідами через CSS класи.
 
-
-
 const images = [
   {
     url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -30,8 +28,8 @@ const makeGalleryArr = images.map(({ url, alt } = {}) => {
   return `<li class='gallery-item'>
     <img class='gallery-img' src="${url}" alt="${alt}" >
   </li>
-  `
+  `;
 });
 console.log(makeGalleryArr);
 
-galleryEl.insertAdjacentHTML("afterbegin", makeGalleryArr.join(''));
+galleryEl.insertAdjacentHTML('afterbegin', makeGalleryArr.join(''));

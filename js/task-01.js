@@ -18,11 +18,17 @@
 const numberOfCategoriesEl = document.querySelectorAll('.item');
 console.log(`Number of categories: ${numberOfCategoriesEl.length}`);
 
+//  Варіант 1
+
 // const categoriyAndEl = numberOfCategoriesEl.forEach(el =>
 //     console.log(` Category: ${el.firstElementChild.textContent}\n Elements: ${el.lastElementChild.children.length}`))
-    
-const categoriyAndEl = numberOfCategoriesEl.forEach(el =>
-    console.log(` Category: ${el.querySelector('h2').textContent}\n Elements: ${el.querySelectorAll('li').length}`))
-        
-    
 
+//  Варіант 2
+
+const categoriyAndEl = numberOfCategoriesEl.forEach(el =>
+  console.log(
+    ` Category: ${el.querySelector('h2').textContent}\n Elements: ${
+      el.querySelectorAll('li').length
+    }`
+  )
+);
